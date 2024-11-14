@@ -24,7 +24,8 @@ Capture the waveforms and include the results in the final report.
 
 ### Verilog Code for Sequence Detector Using Moore FSM
 
-``` // moore_sequence_detector.v module moore_sequence_detector ( input wire clk, input wire reset, input wire seq_in, output reg detected ); typedef enum reg [2:0] { S0, S1, S2, S3, S4 // States for detecting 1011 } state_t;
+```
+// moore_sequence_detector.v module moore_sequence_detector ( input wire clk, input wire reset, input wire seq_in, output reg detected ); typedef enum reg [2:0] { S0, S1, S2, S3, S4 // States for detecting 1011 } state_t;
 
 state_t current_state, next_state;
 
@@ -113,7 +114,7 @@ always @(*) begin
 end
 endmodule
 ```
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/a43c1be7-3c5b-4212-9879-dad92bdffae9)
 
 ### Testbench for Sequence Detector (Moore and Mealy FSMs)
 ```
